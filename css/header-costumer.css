@@ -1,0 +1,239 @@
+:root {
+    --gray: #E6E6E6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Lora', serif;
+}
+
+body a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+header .row-header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: auto 0;
+}
+
+header input {
+    width: 200px;
+    height: 30px;
+    border: none
+}
+
+input:focus {
+    outline: 0;
+
+}
+
+header ion-icon {
+    font-size: 25px;
+}
+
+input[type="text" i] {
+    padding: 10px 5px;
+}
+
+nav {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+nav.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 0px;
+    font-size: 18px;
+    height: 60px;
+    line-height: 50px;
+    z-index: 100;
+    background-color: #fff;
+    font-family: 'Lora', serif;
+}
+
+nav div.sticky {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+div .button {
+    border: 0;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+div .button1 {
+    background-color: white;
+    color: black;
+    border: 0;
+    background-color: #4CAF50;
+    width: 100px;
+    height: 30px;
+
+}
+
+div .button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+div .button2 {
+    background-color: #07abe1;
+    color: black;
+
+    width: 100px;
+    height: 30px;
+}
+
+div .button2:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+
+div a {
+    margin: 30px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    z-index: 0;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+/* Caption text */
+.text {
+    color: black;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background: #fff;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+
+
+
+
+article {
+    margin: 0 auto;
+}
+
+footer {
+    background-color:#fff;
+    height: 300px;
+    color: black;
+    margin: 0 auto;
+}
+.nav-footer{
+    
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0;
+}
+a:hover{
+    color: #4200ff;
+}

@@ -1,0 +1,28 @@
+.baiviet{
+    padding-top: 30px;
+    width: 960px;
+    margin: 0px auto;
+    display: flex;;
+   
+}
+
+.baiviet img{
+    width: 300px;
+}
+.baiviet .chitiet{
+    padding: 30px;;
+    display:grid;
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    justify-content: space-between;
+}
+.baiviet .chitiet .name a{
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+
+}
+.baiviet .chitiet .name a:hover{
+    color: rgb(31, 97, 197);
+    transition: ease-in 0.5s;
+}
