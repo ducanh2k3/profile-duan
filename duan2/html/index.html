@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Roboto:ital,wght@0,100;1,100&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+
+        <div class="row-header">
+            <div>
+                <img src="img/NEW.png" width="65%">
+            </div>
+            <div class="" style="margin: auto; line-height: 50px;display: flex;align-items:center ;">
+                <a href="">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+                <a href="">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <input type="text" name="" id="" placeholder="Search..." style="margin-bottom: 12px;">
+                <button onclick="" style="border: 0;margin-bottom: 12px; margin-left: 10px;" class="header-button">
+                    <ion-icon name="search"></ion-icon>
+                </button>
+            </div>
+    </header>
+
+    <nav class="sticky">
+        <div class="sticky">
+            <div><a href="">HOME</a>
+                <a href="">HEALTH</a>
+                <a href="">DESIGN</a>
+                <a href="">SPORT</a>
+                <a href="">CONTACT</a>
+                <hr>
+            </div>
+            <div><button class="button button1">LogIn</button>
+                <button class="button button2">LogOut</button>
+                <hr>
+            </div>
+    </nav>
+
+
+    </div>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+
+            <img src="https://cdn.tgdd.vn/Files/2021/04/11/1342554/mon-the-thao-ban-nen-thu-trong-nhung-ngay-he-de-9.jpg"
+                style="width:1000px;height: 350px;">
+            <div class="text">Sport</div>
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="https://www.reconversionprofessionnelle.org/wp-content/uploads/2022/04/dessins-design-produit-innovant-990x556.png"
+                style="width:1000px;height: 350px;">
+            <div class="text">Design</div>
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="https://www.healthcareitnews.com/sites/hitn/files/Doctor%20at%20computer%2C%20hologram%20illustration_2.jpg"
+                style="width:1000px;height: 350px;">
+            <div class="text">Health</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a> 
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <aside>
+
+    </aside>
+
+
+
+    <footer>
+    <h1 align="center" style="padding:30px; color:#4200ff;">NEWS</h1>
+    <div class="nav-footer" align="center">
+        <a href="">HOME</a>
+        <a href="">HEALTH</a>
+        <a href="">DESIGN</a>
+        <a href="">SPORT</a>
+        <a href="">CONTACT</a>
+    </div>
+    <div>
+        <p><h3>Stay in touch</h3></p>
+        <img src="img/facebook-svgrepo-com.svg" alt="" width="3%">
+        <img src="img/gmail-svgrepo-com.svg" alt=""width="3%">
+        <img src="img/instagram-svgrepo-com.svg" alt=""width="3%">
+        <img src="img/youtube-svgrepo-com.svg" alt=""width="3%">
+
+    </div>
+    </footer>
+</body>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<script >
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
+
+</html>
