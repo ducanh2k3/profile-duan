@@ -1,0 +1,87 @@
+* {
+    margin: 0 0;
+    padding: 0 0;
+    box-shadow: border-box;
+
+}
+
+body {
+    background-image: linear-gradient(45deg, rgb(65, 88, 208)0%, rgb(200, 80, 192)50%, rgb(255, 204, 112));
+    display: grid;
+    grid-template-columns: 23% 77%;
+}
+
+aside {
+    width: 300px;
+    height: 800px;
+    border-radius: 10px;
+    box-shadow: 10px 5px grey;
+    background-color: beige;
+}
+aside .administrator{
+    padding: 10px;
+    font-size:30px ;
+}
+body a{
+    color: black;
+    text-decoration: none;
+}
+aside .tags {
+    width: 100%; 
+    font-size: 20px;
+   line-height: 60px;
+   display: block;
+}
+
+aside .sticky{
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0;
+}
+aside div .tags:hover a{
+    background-image: linear-gradient(45deg, rgb(65, 88, 208)0%, rgb(200, 80, 192)50%, rgb(255, 204, 112));
+    display: block;
+    color: rgb(255,248,220);
+}
+
+
+@-webkit-keyframes my {
+    0% { color: rgb(65, 88, 208)0% } 
+    50% { color: rgb(200, 80, 192)50%  } 
+    100% { color:rgb(255, 204, 112)  } 
+}
+@-moz-keyframes my { 
+    0% { color: rgb(65, 88, 208)0% } 
+    50% { color: rgb(200, 80, 192)50%  } 
+    100% { color:rgb(255, 204, 112)  }  
+}
+@-o-keyframes my { 
+    0% { color: rgb(65, 88, 208)0% } 
+    50% { color: rgb(200, 80, 192)50%  } 
+    100% { color:rgb(255, 204, 112)  }  
+}
+@keyframes my { 
+    0% { color: rgb(65, 88, 208)0% } 
+    50% { color: rgb(200, 80, 192)50%  } 
+    100% { color:rgb(255, 204, 112)  } 
+} 
+.text {
+    font-size: 60px;
+    color: darkgrey;
+    font-weight:bold;
+    -webkit-animation: my 900ms infinite;
+    -moz-animation: my 900ms infinite; 
+    -o-animation: my 900ms infinite; 
+    animation: my 900ms infinite;
+}
+table tr th{
+    padding: 10px;
+   
+}
+table{
+    font-size: 20px;
+}
+table th td{
+    margin-left:100px;
+
+}
